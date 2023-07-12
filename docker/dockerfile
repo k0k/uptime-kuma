@@ -79,7 +79,7 @@ CMD ["npm", "run", "start-pr-test"]
 ############################################
 # Upload the artifact to Github
 ############################################
-FROM anticripto/uptime-kuma:base-debian AS upload-artifact
+FROM louislam/uptime-kuma:base-debian AS upload-artifact
 WORKDIR /
 RUN apt update && \
     apt --yes install curl file
