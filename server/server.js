@@ -3,7 +3,7 @@
  * node "server/server.js"
  * DO NOT require("./server") in other modules, it likely creates circular dependency!
  */
-console.log("Welcome to Uptime Kuma");
+console.log("Welcome to EX-CLE Status Pages");
 
 // As the log function need to use dayjs, it should be very top
 const dayjs = require("dayjs");
@@ -21,7 +21,7 @@ console.log(`Your Node.js version: ${nodeVersion}`);
 
 // See more: https://github.com/louislam/uptime-kuma/issues/3138
 if (nodeVersion >= 20) {
-    console.warn("\x1b[31m%s\x1b[0m", "Warning: Uptime Kuma is currently not stable on Node.js >= 20, please use Node.js 18.");
+    console.warn("\x1b[31m%s\x1b[0m", "Warning: EX-CLE Status Pages is currently not stable on Node.js >= 20, please use Node.js 18.");
 }
 
 if (nodeVersion < requiredVersion) {
@@ -33,7 +33,7 @@ const args = require("args-parser")(process.argv);
 const { sleep, log, getRandomInt, genSecret, isDev } = require("../src/util");
 const config = require("./config");
 
-log.info("server", "Welcome to Uptime Kuma");
+log.info("server", "Welcome to EX-CLE Status Pages");
 log.debug("server", "Arguments");
 log.debug("server", args);
 
